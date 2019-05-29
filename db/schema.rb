@@ -16,8 +16,7 @@ ActiveRecord::Schema.define(version: 2019_05_29_073004) do
   enable_extension "plpgsql"
 
   create_table "words", force: :cascade do |t|
-    t.string "type"
-    t.string "integer"
+    t.integer "word_type"
     t.string "body"
     t.string "string"
     t.datetime "created_at", null: false
